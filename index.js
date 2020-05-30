@@ -20,6 +20,7 @@ app.use(express.static("public"));
 // });
 
 //listen to port
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
+
 app.listen(port);
-console.log('You are listening to port 9000 : open http://localhost:9000/ in browser');
+console.log(port);
